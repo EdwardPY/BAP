@@ -147,6 +147,29 @@
                       explicabo inventore.</p>
                   </blockquote>
                   <p>&mdash; Chris Stanworth</p>
+                  <style>
+                  table tr {
+                      padding: 10px;
+                  }
+                  </style>
+                  <table style="padding: 10px;">
+                    <tr>
+                      <td><b>Kode Matakuliah</b></td>
+                      <td><b>Nama Matakuliah</b></td>
+                      <td><b>SKS</b></td>
+                    </tr>
+                  <?php
+                  $mahasiswas = vmhs_edw26::get();
+
+                  foreach ($mahasiswas as $vmhs_edw26) {
+                      echo '<tr>';
+                      echo '<td>' . $vmhs_edw26->kode_matakuliah . '</td>';
+                      echo '<td>' . $vmhs_edw26->nama_matakuliah . '</td>';
+                      echo '<td>' . $vmhs_edw26->sks . '</td>';
+                      echo '</tr>';
+                  }
+                  ?>
+                </table>
                 </div>
               </div>
             </div><!-- End testimonial item -->

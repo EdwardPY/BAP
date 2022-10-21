@@ -1,3 +1,6 @@
+<?php
+  use App\Models\vmhs_edw26;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,15 +53,14 @@
         </div>
         <div class="col-md-6 d-none d-md-block  mr-auto">
           <div class="tweet d-flex">
-            <span class="bi bi-twitter text-white mt-2 mr-3"></span>
             <div>
-              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
+              <p><em>Hi, my name is Edward.<br> <a href="#">.</a></em></p>
             </div>
           </div>
         </div>
         <div class="col-md-4 d-none d-md-block">
           <h3>Hire Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
+          <p>Saya adalah mahasiswa di UPH <br> <a href="#">03081200026@student.uph.edu</a></p>
         </div>
       </div>
 
@@ -67,7 +69,7 @@
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="welcome.blade.php">MyPortfolio.</a>
+      <a class="navbar-brand" href="index.php">CONTACT ME.</a>
       <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
         <span></span>
       </a>
@@ -82,66 +84,35 @@
         <div class="row mb-5 align-items-end">
           <div class="col-md-6" data-aos="fade-up">
             <h2>Contact</h2>
-            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
-              officiis explicabo inventore.
+            <p class="mb-0">.
             </p>
           </div>
 
         </div>
+          <div>
+            <style>
+              table tr {
+                  padding: 10px;
+              }
+            </style>
+            <table style="padding: 10px;">
+              <tr>
+                <td><b>Kode Matakuliah</b></td>
+                <td><b>Nama Matakuliah</b></td>
+                <td><b>SKS</b></td>
+              </tr>
+              <?php
+              $mahasiswas = vmhs_edw26::get();
 
-        <div class="row">
-          <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-
-              <div class="row gy-3">
-                <div class="col-md-6 form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="col-md-6 form-group">
-                  <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-                <div class="col-md-12 form-group">
-                  <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" required>
-                </div>
-                <div class="col-md-12 form-group">
-                  <label for="name">Message</label>
-                  <textarea class="form-control" name="message" cols="30" rows="10" required></textarea>
-                </div>
-
-                <div class="col-md-12 my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <div class="col-md-6 mt-0 form-group">
-                  <input type="submit" class="readmore d-block w-100" value="Send Message">
-                </div>
-              </div>
-
-            </form>
-
-          </div>
-
-          <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <strong class="d-block mb-1">Address</strong>
-                <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
-              </li>
-              <li class="mb-3">
-                <strong class="d-block mb-1">Phone</strong>
-                <span>+1 232 3235 324</span>
-              </li>
-              <li class="mb-3">
-                <strong class="d-block mb-1">Email</strong>
-                <span>youremail@domain.com</span>
-              </li>
-            </ul>
+              foreach ($mahasiswas as $vmhs_edw26) {
+                  echo '<tr>';
+                  echo '<td>' . $vmhs_edw26->kode_matakuliah . '</td>';
+                  echo '<td>' . $vmhs_edw26->nama_matakuliah . '</td>';
+                  echo '<td>' . $vmhs_edw26->sks . '</td>';
+                  echo '</tr>';
+               }
+              ?>
+            </table>
           </div>
 
         </div>

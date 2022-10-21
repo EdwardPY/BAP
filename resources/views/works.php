@@ -41,33 +41,31 @@
       <div class="row align-items-start">
         <div class="col-md-2">
           <ul class="custom-menu">
-            <li><a href="welcome.blade.php">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About Me</a></li>
-            <li><a href="services.php">Services</a></li>
-            <li class="active"><a href="works.php">Works</a></li>
+            <li><a href="services.php">Minat & Hobi</a></li>
+            <li class="active"><a href="works.php">Keahlian</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-6 d-none d-md-block  mr-auto">
           <div class="tweet d-flex">
-            <span class="bi bi-twitter text-white mt-2 mr-3"></span>
             <div>
-              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
+              <p><em>Hi, my name is Edward.<br> <a href="#">.</a></em></p>
             </div>
           </div>
         </div>
         <div class="col-md-4 d-none d-md-block">
           <h3>Hire Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
+          <p>Saya adalah mahasiswa di UPH <br> <a href="#">03081200026@student.uph.edu</a></p>
         </div>
       </div>
-
     </div>
   </div>
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="welcome.blade.php">MyPortfolio.</a>
+      <a class="navbar-brand" href="index.php">Keahlian</a>
       <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
         <span></span>
       </a>
@@ -81,76 +79,66 @@
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <h2>Hey, I'm Johan Stanworth</h2>
-            <p class="mb-0">Freelance Creative &amp; Professional Graphics Designer</p>
+          <div class="row">
+          <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+            <h3 class="h3 mb-4">Keahlian</h3>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <div class="d-flex mb-1">
+                  <strong>Berbicara Bahasa Inggris</strong>
+                  <span class="ml-auto">80%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex mb-1">
+                  <strong>Beradaptasi</strong>
+                  <span class="ml-auto">96%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex mb-1">
+                  <strong>Kreatif</strong>
+                  <span class="ml-auto">99%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex mb-1">
+                  <strong>Microsoft Word</strong>
+                  <span class="ml-auto">87%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex mb-1">
+                  <strong>Powerpoint</strong>
+                  <span class="ml-auto">85%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex mb-1">
+                  <strong>Excel</strong>
+                  <span class="ml-auto"> 88%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-12 col-lg-6 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
-            <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">All</a>
-              <a href="#" data-filter=".web">Web</a>
-              <a href="#" data-filter=".design">Design</a>
-              <a href="#" data-filter=".branding">Branding</a>
-              <a href="#" data-filter=".photography">Photography</a>
-            </div>
-          </div>
-        </div>
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.php" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Boxed Water</h3>
-                <span>Web</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img_1.jpg">
-            </a>
-          </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.php" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Build Indoo</h3>
-                <span>Photography</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img_2.jpg">
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.php" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Cocooil</h3>
-                <span>Branding</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img_3.jpg">
-            </a>
-          </div>
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.php" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Nike Shoe</h3>
-                <span>Design</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img_4.jpg">
-            </a>
-          </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.php" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Kitchen Sink</h3>
-                <span>Photography</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img_5.jpg">
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="work-single.php" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Amazon</h3>
-                <span>brandingn</span>
-              </div>
-              <img class="img-fluid" src="assets/img/img_6.jpg">
-            </a>
-          </div>
-        </div>
-      </div>
     </section><!-- End  Works Section -->
 
     <!-- ======= Testimonials Section ======= -->

@@ -1,7 +1,3 @@
-<?php
-  use App\Models\vmhs_edw26;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MyPortfolio Bootstrap Template - Services</title>
+  <title>EDWARD</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -45,10 +41,10 @@
       <div class="row align-items-start">
         <div class="col-md-2">
           <ul class="custom-menu">
-            <li><a href="index.php">Home</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
             <li><a href="about.php">About Me</a></li>
-            <li class="active"><a href="services.php">Minat & Hobi</a></li>
-            <li><a href="works.php">Keahlian</a></li>
+            <li><a href="services.php">Keahlian</a></li>
+            <li><a href="works.php">Minat & Hobi</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
@@ -64,14 +60,13 @@
           <p>Saya adalah mahasiswa di UPH <br> <a href="#">03081200026@student.uph.edu</a></p>
         </div>
       </div>
-      </div>
 
     </div>
   </div>
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.php">Minat & Hobi</a>
+      <a class="navbar-brand" href="index.php">EDWARD</a>
       <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
         <span></span>
       </a>
@@ -80,18 +75,16 @@
 
   <main id="main">
 
-    <section class="section">
+    <!-- ======= Works Section ======= -->
+    <section class="section site-portfolio">
       <div class="container">
-        <div class="row mb-4 align-items-center">
-          <div class="col-md-6" data-aos="fade-up">
-
-            <h2>Minat & Hobi</h2>
-            <p>Saya tertarik mempelajari tentang investasi, cara berbisnis yang baik, dan digital marketing. Saat ini saya sedang mempelajari hal-hal tersebut melalui webinar-webinar yang diadakan dan juga secara mandiri. Saya juga senang belajar, membaca buku dan berolahraga.</p>
-
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2>Hey, I'm EDWARD</h2>
+            <p class="mb-0">Freelancer &amp; Professional GAMER</p>
           </div>
-
-        </div>
       </div>
+    </section><!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section class="section pt-0">
@@ -120,29 +113,6 @@
                     <p>CSGO</p>
                   </blockquote>
                   <p>&mdash; </p>
-                  <style>
-                  table tr {
-                      padding: 10px;
-                  }
-                </style>
-                <table style="padding: 10px;">
-                  <tr>
-                    <td><b>Kode Matakuliah</b></td>
-                    <td><b>Nama Matakuliah</b></td>
-                    <td><b>SKS</b></td>
-                  </tr>
-                  <?php
-                  $mahasiswas = vmhs_edw26::get();
-
-                  foreach ($mahasiswas as $vmhs_edw26) {
-                      echo '<tr>';
-                      echo '<td>' . $vmhs_edw26->kode_matakuliah . '</td>';
-                      echo '<td>' . $vmhs_edw26->nama_matakuliah . '</td>';
-                      echo '<td>' . $vmhs_edw26->sks . '</td>';
-                      echo '</tr>';
-                  }
-                  ?>
-                </table>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -161,7 +131,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <p class="mb-1">&copy; Copyright MyPortfolio. All Rights Reserved</p>
+          <p class="mb-1">&copy; Copyright. All Rights Reserved</p>
           <div class="credits">
             <!--
             All the links in the footer should remain intact.
@@ -169,7 +139,7 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
           -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            <a href="https://bootstrapmade.com/"></a>
           </div>
         </div>
         <div class="col-sm-6 social text-md-end">

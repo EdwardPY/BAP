@@ -1,3 +1,6 @@
+<?php
+  use App\Models\vmhs_edw26;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,22 +89,30 @@
           </div>
 
         </div>
+          <div>
+            <style>
+              table tr {
+                  padding: 10px;
+              }
+            </style>
+            <table style="padding: 10px;">
+              <tr>
+                <td><b>Kode Matakuliah</b></td>
+                <td><b>Nama Matakuliah</b></td>
+                <td><b>SKS</b></td>
+              </tr>
+              <?php
+              $mahasiswas = vmhs_edw26::get();
 
-          <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <strong class="d-block mb-1">Address</strong>
-                <span>JALAN MENGKARA NO 43 MEDAN</span>
-              </li>
-              <li class="mb-3">
-                <strong class="d-block mb-1">Phone</strong>
-                <span>+62 099110344523</span>
-              </li>
-              <li class="mb-3">
-                <strong class="d-block mb-1">Email</strong>
-                <span>03081200026@STUDENT.UPH.EDU</span>
-              </li>
-            </ul>
+              foreach ($mahasiswas as $vmhs_edw26) {
+                  echo '<tr>';
+                  echo '<td>' . $vmhs_edw26->kode_matakuliah . '</td>';
+                  echo '<td>' . $vmhs_edw26->nama_matakuliah . '</td>';
+                  echo '<td>' . $vmhs_edw26->sks . '</td>';
+                  echo '</tr>';
+               }
+              ?>
+            </table>
           </div>
 
         </div>
